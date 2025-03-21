@@ -1,0 +1,31 @@
+@use "../../globals.scss";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    background-color: globals.$blue;
+    
+}
+
+.logo {
+    margin-left: 1rem;
+    font-family: globals.$font-baskerville;
+    font-weight: globals.$font-bold;
+    font-size: 20px;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.hidden {
+    display: none;
+}

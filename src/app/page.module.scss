@@ -1,0 +1,47 @@
+@use "globals";
+
+.page {
+  font-size: 14px;
+  margin: 0 2rem;
+  margin-top: 14vh; 
+}
+
+.title {
+  font-family: globals.$font-baskerville;
+  font-size: 40px;
+  font-weight: globals.$font-bold;
+}
+
+.landingText {
+  margin: 1.5rem 0;
+}
+
+.contactIcons {
+  display: flex;
+  flex-direction: row;
+  width: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7vh;
+}
+
+.icon {
+  width: 1.5rem;
+}
+
+.subtitleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: globals.$font-baskerville;
+  font-size: 24px;
+  font-weight: globals.$font-bold;
+}
+
+.subtitleLink {
+  font-size: 12px;
+  margin-left: 0.5rem;
+}

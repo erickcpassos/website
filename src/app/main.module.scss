@@ -1,0 +1,25 @@
+@use "globals";
+
+.global {
+    font-family: globals.$font-ibm;
+    background-color: globals.$blue;
+    color: globals.$white;
+
+    p, h1 {
+        span{
+            color: globals.$green;
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    a {
+        color: globals.$green;
+    }
+
+}
