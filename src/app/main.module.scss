@@ -4,7 +4,9 @@
     font-family: globals.$font-ibm;
     background-color: globals.$blue;
     color: globals.$white;
+    scroll-behavior: smooth;
 
+    
     p, h1 {
         span{
             color: globals.$green;
@@ -19,7 +21,8 @@
     }
 
     a {
-        color: globals.$green;
+        color: globals.$white;
+        text-decoration: none;
     }
 
 }

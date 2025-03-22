@@ -1,0 +1,17 @@
+@use '../../globals.scss';
+
+.card {
+    border: 2px solid globals.$green;
+    text-align: center;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        border: 2px solid globals.$white;
+        color: globals.$green;
+    }
+}

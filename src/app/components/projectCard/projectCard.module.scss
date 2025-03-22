@@ -6,13 +6,18 @@
 
 .image {
     width: 100%;
-    height: 100%;
-    margin-bottom: 0;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    transition: all 0.1s;
+    cursor: pointer;
+    object-fit: cover;
 }
 
 .title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     margin-top: 0.5rem;
     margin-bottom: 0;
@@ -22,4 +27,42 @@
     font-size: 14px;
     margin-top: 0.5rem;
     margin-bottom: 0;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: globals.$green;
+    border: 0;
+    margin-top: 1rem;
+    color: globals.$blue;
+    font-weight: globals.$font-bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all 0.1s;
+
+    &:hover {
+        background-color: globals.$white;
+    }
+}
+
+a.tryit {
+    display: inline-block;
+    color: globals.$blue;
+    font-family: globals.$font-ibm;
+}
+
+a.seemore {
+    text-decoration: underline;
+    color: globals.$green;
+    cursor: pointer;
+    
+}
+
+@media (min-width: globals.$screen-mobile) {
+    
+    .image {
+        height: 70%
+    }
+
 }

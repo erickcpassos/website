@@ -12,7 +12,11 @@ export default function Navbar() {
     <nav className={styles.navbar}>
         <p className={styles.logo}>Hi! I'm <span>Erick</span>.</p>       
         <Image className={styles.icon} priority src={navbarMenu} alt="Navbar Menu"/>
-
+        <div className={styles.options}>
+          <a href="#">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+        </div>
     </nav>
   );
 }
