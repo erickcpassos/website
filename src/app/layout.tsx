@@ -4,6 +4,8 @@ import { IBM_Plex_Mono, Libre_Baskerville } from 'next/font/google'
 import Navbar from "./components/navbar/navbar";
 import Footer from './components/footer/footer';
 
+import { Metadata } from 'next';
+
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ['400'],
   style: 'normal',
@@ -18,6 +20,11 @@ const libreBaskerville = Libre_Baskerville({
   display: 'swap',
 
 })
+
+export const metadata: Metadata = {
+  title: 'Hi! I\'m Erick',
+  description: 'My name is Erick Passos and this is my personal website!',
+};
 
 export default function RootLayout({
   children,

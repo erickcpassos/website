@@ -11,6 +11,8 @@
     flex-direction: row;
     align-items: center;
     background-color: globals.$blue;
+
+    z-index: 1;
 }
 
 .logo {

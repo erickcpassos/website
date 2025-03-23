@@ -1,4 +1,5 @@
 @use "globals";
+@use "typed";
 
 .page {
   font-size: 14px;
@@ -10,7 +11,11 @@
   font-family: globals.$font-baskerville;
   font-size: 40px;
   font-weight: globals.$font-bold;
+
+  @include typed.typed("Hi! I'm Erick.", [null, null, null, null], (iterations: 1, caret-width: 0.1ch, caret-color:  globals.$green))
 }
+
+
 
 .landingText {
   margin: 1.5rem 0;

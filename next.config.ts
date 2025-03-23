@@ -11,17 +11,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,
-    remotePatterns: [
-      {
-          protocol: 'https',
-          hostname: 'placehold.co',
-          port: '',
-          pathname: '/**',
-      },
-    ],
   },
-  assetPrefix: isProd ? '/your-repository-name/' : '',
-  basePath: isProd ? '/your-repository-name' : '',
+  assetPrefix: isProd ? '/website/' : '',
+  basePath: isProd ? '/website' : '',
   output: 'export'
 
 };
