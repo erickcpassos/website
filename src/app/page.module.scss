@@ -15,8 +15,6 @@
   @include typed.typed("Hi! I'm Erick.", [null, null, null, null], (iterations: 1, caret-width: 0.1ch, caret-color:  globals.$green))
 }
 
-
-
 .landingText {
   margin: 1.5rem 0;
 }
@@ -59,6 +57,13 @@ a.subtitleLink {
   margin-left: 0.5rem;
   text-decoration: underline;
   cursor: pointer;
+}
+
+a.goback {
+  color: globals.$green;
+  text-decoration: underline;
+  cursor: pointer;
+
 }
 
 .skillList {

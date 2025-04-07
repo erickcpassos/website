@@ -14,6 +14,7 @@ import wordleImg1 from '../../public/wordle.png';
 import wordleImg2 from '../../public/wordle_screenshot.png';
 import lunettaImg1 from '../../public/lunetta.png';
 import lunettaImg2 from '../../public/lunetta_screenshot.png';
+import Link from "next/link";
 
 
 
@@ -46,7 +47,9 @@ export default function Home() {
 
       <div id="projects" className={styles.subtitleContainer}>
         <h2 className={styles.subtitle}>Projects |</h2>
-        <a className={styles.subtitleLink}>See all projects</a>
+        <Link href='/projects' legacyBehavior>
+          <a className={styles.subtitleLink}>See all projects</a>
+        </Link>
       </div>
 
       <div className={styles.projectList}>

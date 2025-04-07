@@ -1,0 +1,37 @@
+@use "../globals.scss";
+
+.page {
+    font-size: 14px;
+    margin: 0 2rem;
+    margin-top: 14vh; 
+  }
+
+.title {
+    font-family: globals.$font-baskerville;
+    font-size: 40px;
+    font-weight: globals.$font-bold;
+  }
+  
+@media (min-width: globals.$screen-mobile) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        max-width: 768px;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .projectList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 0 10%;
+        max-width: 50rem;
+    }
+
+}
