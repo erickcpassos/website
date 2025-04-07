@@ -9,14 +9,14 @@ export interface ProjectCardProps {
     tryItLink: string,
     imgFront: StaticImageData,
     imgBack: StaticImageData,
-    slug: string,
+    slug?: string,
 }
 
 export default function ProjectCard({title, description, tryItLink, imgFront, imgBack, slug}: ProjectCardProps) {
 
   const [isHovering, setIsHovering] = useState(false); 
 
-  const readMoreURL = `/projects/${slug}`;
+  const readMoreURL = `/projects/${slug || 'undefined'}`;
 
   return (
     <div className={styles.card}>
