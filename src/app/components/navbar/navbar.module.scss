@@ -12,7 +12,7 @@
     align-items: center;
     background-color: globals.$blue;
 
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo {
@@ -25,6 +25,7 @@
 .icon {
     margin-left: auto;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .options {
@@ -33,6 +34,56 @@
 
 .hidden {
     display: none;
+}
+
+.dropdown {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+    background-color: globals.$blue;
+    transition: opacity 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dropdown.closed {
+    top: -100%;    
+    opacity: 0;
+}
+
+.navbarBackdrop {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 0;
+    background-color: black;
+    opacity: 50%;    
+}
+
+.navbarBackdrop.closed {
+    display: none;
+}
+
+.dropdownlink {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    transition: all 0.1s;
+
+
+    &:hover {
+        color: globals.$green;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 @media (min-width: globals.$screen-mobile) {
