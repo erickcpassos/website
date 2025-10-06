@@ -39,6 +39,8 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
+
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       </body>
     </html>
   );
