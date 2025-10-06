@@ -38,9 +38,8 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
-
-        <Script src="https://scripts.simpleanalyticscdn.com/latest.js"></Script>
       </body>
+        <Script src="https://scripts.simpleanalyticscdn.com/latest.js"></Script>
     </html>
   );
 }
