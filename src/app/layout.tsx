@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar";
 import Footer from './components/footer/footer';
 
 import { Metadata } from 'next';
+import Script from 'next/script';
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ['400'],
@@ -31,8 +32,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
   return (
     <html lang="en" className={`${styles.global}`}>
       <body>
@@ -40,7 +39,7 @@ export default function RootLayout({
         {children}
         <Footer/>
 
-        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <Script src="https://scripts.simpleanalyticscdn.com/latest.js"></Script>
       </body>
     </html>
   );
