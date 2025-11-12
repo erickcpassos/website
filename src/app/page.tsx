@@ -14,6 +14,8 @@ import wordleImg1 from '../../public/wordle.png';
 import wordleImg2 from '../../public/wordle_screenshot.png';
 import lunettaImg1 from '../../public/lunetta.png';
 import lunettaImg2 from '../../public/lunetta_screenshot.png';
+import flemingImg1 from '../../public/fleming.png'
+import flemingImg2 from '../../public/fleming_screenshot.png'
 import Link from "next/link";
 
 
@@ -26,7 +28,7 @@ export default function Home() {
         
       </h1>
 
-      <p className={styles.landingText}>I’m an electrical engineering student and my main interests are <span>electronics</span>, <span>computer science</span>, and <span>software development</span>.</p>
+      <p className={styles.landingText}>I’m an Electronic and Electrical Engineering student at UCL and my main interests are <span>electronics</span>, <span>computer science</span>, and <span>software development</span>.</p>
       <p className={styles.landingText}>This website shows some of my favourite personal and/or professional <span>projects</span>. </p>
 
       <div className={styles.contactIcons}>
@@ -53,9 +55,10 @@ export default function Home() {
       </div>
 
       <div className={styles.projectList}>
+          <ProjectCard title="Fleming Society" imgFront={flemingImg1} imgBack={flemingImg2} description="The official website. Made with love for the best society in UCL." tryItLink="https://beta.flemingsociety.com/"/>
           <ProjectCard title="Graphit" imgFront={graphitImg1} imgBack={graphitImg2} description="A simple, lightweight web-based graph editor. (desktop recommended)" tryItLink="https://erickcpassos.github.io/graphit/"/>
-          <ProjectCard title="Termo Solver" imgFront={wordleImg1} imgBack={wordleImg2} description="A CLI assistant to win in Wordle-like games (such as the Brazilian 'Termo')." tryItLink="https://github.com/erickcpassos/termo-solver"/>
           <ProjectCard title="Lunetta" imgFront={lunettaImg1} imgBack={lunettaImg2} description="A mobile app to connect low-income students with educational opportunities." tryItLink="https://www.figma.com/proto/vCajqHM9aGAHz2IRQxfo5n/OBT?node-id=570-1479&t=ox1tHIwfxJ4V0KeP-1"/>
+          <ProjectCard title="Termo Solver" imgFront={wordleImg1} imgBack={wordleImg2} description="A CLI assistant to win in Wordle-like games (such as the Brazilian 'Termo')." tryItLink="https://github.com/erickcpassos/termo-solver"/>
 
       </div>
 
