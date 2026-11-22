@@ -22,7 +22,7 @@ export default function ProjectCard({title, description, tryItLink, imgFront, im
     <div className={styles.card}>
         <Image className={styles.image} src={isHovering ? imgBack : imgFront} onMouseOver={() => {setIsHovering(true)}} onMouseOut={() => {setIsHovering(false)}} width={600} height={400} alt="placeholder"/>
         <p className={styles.title}>{title}</p>
-        <p className={styles.description}>{description} <Link href={readMoreURL} legacyBehavior><a className={styles.seemore}>Read more</a></Link></p>
+        <p className={styles.description}>{description}</p>
         <div className={styles.buttons}>
           <a href={tryItLink} target="_blank" className={`${styles.button} ${styles.tryit}`}>Try it!</a>
         </div>
